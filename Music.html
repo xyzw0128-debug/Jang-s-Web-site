@@ -1,0 +1,199 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 with Hanbit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 초기화 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {text-decoration: none;}
+        img {border: 0;}
+        li {list-style: none;}
+    </style>
+
+    <!-- 공통 -->
+    <style>
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+
+    <!-- 헤더 -->
+    <style>
+        #main-header{
+            padding: 10px 5px;
+        }
+        #main-header h1{
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+
+        #main-header ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #main-header li{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        #main-header li a{
+            color: #837da0;
+        }
+
+        #main-header li.active a{
+            color: black;
+            font-weight: 500;
+        }
+
+        #main-header label {
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+        #checkbox {
+            display: none;
+        }
+        #checkbox + nav {
+            display: block;
+        }
+        #checkbox:checked + nav {
+            display: none;
+        }
+    </style>
+
+    <!-- 본문과 푸터 -->
+    <style>
+        #main-content {
+            background: #00afa0;
+            padding: 40px 15px 30px;
+        }
+
+        #main-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500px;
+            text-shadow: 3px 4px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        #main-content p{
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
+        }
+        #sub-content {
+            padding-top: 30px;
+        }
+
+        
+        
+        #main-footer{
+            padding-top: 40px;
+        }
+        footer {
+            background: #323232;
+            color: white;
+            font-size: 12px;
+            text-align: center; 
+            line-height: 40px;
+        }
+    </style>
+    <style>
+        /* 유튜브 반응형 컨테이너 스타일 */
+        .video-container {
+            position: relative;
+            width: 100%;
+            height: 0;
+            padding-bottom: 56.25%; /* 16:9 비율 (9 / 16 = 0.5625) */
+            overflow: hidden;
+            margin: 20px auto;    /* 영상들 사이의 간격 */
+            border-radius: 10px;    /* 모서리를 살짝 둥글게 (선택사항) */
+            box-shadow: 0 4px 10px rgba(0,0,0,0.3); /* 그림자 효과 (선택사항) */
+        }
+
+        /* iframe 자체를 컨테이너에 꽉 채우기 */
+        .video-container iframe {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border: none; /* 테두리 제거 */
+        }
+    </style>
+
+</head>
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>MENU</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li><a href="Home.html">Home</a></li>
+                    <hr>
+                    <li><a href="Book.html">Book</a></li>
+                    <hr>
+                    <li class="active"><a href="Music.html">Music</a></li>
+                    <hr>
+                    <li><a href="Habit.html">Habit</a></li>
+                    <hr>
+                    <li><a href="Art.html">Art</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>Music list</h1>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article class="container">
+            <div>
+                <h2>F1 - Loze My Mind</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/VJxppgsHjF8?si=XNpd2o59Zt5-VzOS" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h2>Legue of Legend</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0ERTPLucL_A?si=NRNDF61QwrF-Aqdu" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+            <br>
+            <div>
+                <h2>Unravel</h2>
+                <div class="video-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/7aMOurgDB-o?si=-3dX5M9e1cqDI7IS" title="YouTube video player" frameborder="0" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>©1991-2023 Example. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>

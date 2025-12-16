@@ -1,0 +1,188 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>HTML5 with Hanbit</title>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+    <!-- 초기화 -->
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        a {text-decoration: none;}
+        img {border: 0;}
+        li {list-style: none;}
+    </style>
+
+    <!-- 공통 -->
+    <style>
+        .container{
+            margin-left: auto;
+            margin-right: auto;
+            padding-left: 20px;
+            padding-right: 20px;
+        }
+    </style>
+
+    <!-- 헤더 -->
+    <style>
+        #main-header{
+            padding: 10px 5px;
+        }
+        #main-header h1{
+            font-size: 20px;
+            font-weight: normal;
+            line-height: 27px;
+            color: #222;
+        }
+
+        #main-header ul{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        #main-header li{
+            margin-top: 8px;
+            margin-bottom: 8px;
+        }
+
+        #main-header li a{
+            color: #837da0;
+        }
+
+        #main-header li.active a{
+            color: black;
+            font-weight: 500;
+        }
+
+        #main-header label {
+            text-align: center;
+            float: right;
+            width: 40px;
+            height: 27px;
+            color: #222;
+            border: 1px solid #222;
+            border-radius: 5px;
+        }
+        #checkbox {
+            display: none;
+        }
+        #checkbox + nav {
+            display: block;
+        }
+        #checkbox:checked + nav {
+            display: none;
+        }
+    </style>
+
+    <!-- 본문과 푸터 -->
+    <style>
+        #main-content {
+            background: #00afa0;
+            padding: 40px 15px 30px;
+        }
+
+        #main-content h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: white;
+            font-weight: 500px;
+            text-shadow: 3px 4px 30px rgba(0, 0, 0, 0.8);
+        }
+
+        #main-content p{
+            text-align: center;
+            color: white;
+            text-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
+        }
+        #sub-content {
+            padding-top: 30px;
+        }
+        
+        #sub-content img{
+            width: 200px;
+        }
+        #sub-content h1{
+            margin: 10px auto;
+        }
+        #sub-content h2{
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+        
+        #main-footer{
+            padding-top: 40px;
+        }
+        footer {
+            background: #323232;
+            color: white;
+            font-size: 12px;
+            text-align: center; 
+            line-height: 40px;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="main-header">
+        <header class="container">
+            <div>
+                <label for="checkbox">▼</label>
+                <h1>MENU</h1>
+            </div>
+            <input id="checkbox" checked="checked" type="checkbox">
+            <nav>
+                <ul>
+                    <li ><a href="Home.html">Home</a></li>
+                    <hr>
+                    <li class="active"><a href="Book.html">Book</a></li>
+                    <hr>
+                    <li><a href="Music.html">Music</a></li>
+                    <hr>
+                    <li><a href="Habit.html">Habit</a></li>
+                    <hr>
+                    <li><a href="Art.html">Art</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="main-content">
+        <article class="container">
+            <h1>Book list</h1>
+        </article>
+    </div>
+    <div id="sub-content">
+        <article class="container">
+            <div class="box">
+                <div>
+                    <h1>중학교 시절을 함께 보낸 책</h1>
+                    <h2>고양이 학교</h2>
+                    <img src="img/Book_1.jpg" alt="고양이 학교">
+                    <p>처음으로 사람들이 만든 세계관을 들여다본 책.</p> 
+                    <p>사람마다 각자의 고유한 세계관을 갖고 있지 않을까 하는 의문을 품었던 경험이 됨</p>
+                    <h2>로봇의 별</h2>
+                    <img src="img/Book_2.jpg" alt="로봇의 별">
+                    <p>어릴 떄 읽었던 가장 인상깊고 흥미로운 로봇에 대한 이야기였음.</p> 
+                    <p>특히 인공 지능을 모를때 읽었던 책이라 지금 다시 읽어보면 어떠한 관점을 갖고 이 책을 읽을지 궁금함</p>
+                    <h1>고등학교 시절을 함께 보낸 책</h1>
+                    <h2>정령왕 엘퀴네스</h2>
+                    <img src="img/Book_3.jpg" alt="정령왕 엘퀴네스">
+                    <p>처음으로 읽었던 장편소설</p>
+                    <p>캐릭터 하나하나가 개성이 넘치고, 각자만의 어울리는 캐릭터 일러스트들이 있음</p>
+                    <p>해당 일러스트들을 그림으로 그리며 그림 실력도 키워나간 경험이 있음</p>
+                    <h2>뉴럴 링크</h2>
+                    <img src="img/Book_4.jpg" alt="뉴럴링크">
+                    <p>게임 판타지 애니매이션 "소드아트온라인"을 보고 읽어보았던 책</p>
+                    <p>뇌를 이용하여 가상현실에서 게임을 한다는 내용을 실현시킬 수 있는 기술이라 관심이 생겨 읽어보게 되었음</p>
+                </div>
+            </div>
+        </article>
+    </div>
+    <div id="main-footer">
+        <footer class="container">
+            <div>©1991-2023 Example. All rights reserved.</div>
+        </footer>
+    </div>
+</body>
+</html>
